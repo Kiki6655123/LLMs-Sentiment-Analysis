@@ -1,0 +1,35 @@
+{
+    "slang": {
+        "cant": {"freq": 383, "sentiment": "negative"},
+        "bro": {"freq": 111, "sentiment": "neutral"},
+        "wont": {"freq": 146, "sentiment": "negative"},
+        "idk": {"freq": 42, "sentiment": "neutral"},
+        "bruh": {"freq": 17, "sentiment": "negative"},
+        "nah": {"freq": 43, "sentiment": "negative"},
+        "lol": {"freq": 156, "sentiment": "positive"},
+        "lit": {"freq": 4, "sentiment": "positive"},
+        "nope": {"freq": 15, "sentiment": "negative"},
+        "dude": {"freq": 53, "sentiment": "neutral"},
+        "cool": {"freq": 47, "sentiment": "positive"},
+        "wtf": {"freq": 35, "sentiment": "negative"}
+    },
+    "emoji": {
+        "😃": {"freq": 8, "sentiment": "positive"},
+        "😎": {"freq": 46, "sentiment": "positive"},
+        "🎮": {"freq": 9, "sentiment": "neutral"},
+        "🔥": {"freq": 575, "sentiment": "positive"},
+        "👍": {"freq": 53, "sentiment": "positive"},
+        "🔽": {"freq": 4, "sentiment": "negative"},
+        "🌱": {"freq": 27, "sentiment": "positive"},
+        "💼": {"freq": 104, "sentiment": "neutral"},
+        "🙌": {"freq": 20, "sentiment": "positive"},
+        "💡": {"freq": 36, "sentiment": "positive"},
+        "😂": {"freq": 293, "sentiment": "positive"},
+        "😭": {"freq": 317, "sentiment": "negative"},
+        "💔": {"freq": 191, "sentiment": "negative"},
+        "🙏": {"freq": 128, "sentiment": "neutral"},
+        "😡": {"freq": 66, "sentiment": "negative"},
+        "💪": {"freq": 187, "sentiment": "positive"},
+        "😊": {"freq": 54, "sentiment": "positive"}
+    }
+}
