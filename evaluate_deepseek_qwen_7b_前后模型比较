@@ -1,0 +1,34 @@
+2025-03-27 00:01:06,461 - INFO - 开始评估 DeepSeek-R1-Distill-Qwen-7B 和微调模型对比
+2025-03-27 00:01:07,516 - INFO - 使用设备: cuda
+2025-03-27 00:01:07,534 - INFO - GPU 名称: P1.gpu.large, 显存: 78.95 GB
+2025-03-27 00:01:07,551 - INFO - /gemini/code/eval_unseen_comments_2000_v4.csv label 分布（过滤后）: {1: 1000, 0: 1000}
+2025-03-27 00:01:07,598 - INFO - /gemini/code/enhanced_tweets.csv label 分布（过滤后）: {1: 3099, 0: 1197}
+2025-03-27 00:01:07,599 - INFO - 加载了 2 个文件，共 6296 条数据（已过滤 label=2）
+2025-03-27 00:01:07,664 - INFO - 使用列名: cleaned_review
+2025-03-27 00:01:08,282 - INFO - 成功加载并验证未见数据
+2025-03-27 00:01:08,282 - INFO - 开始加载 tokenizer...
+2025-03-27 00:01:08,988 - INFO - Tokenizer 配置: pad_token=<｜end▁of▁sentence｜>, pad_token_id=151643
+2025-03-27 00:01:08,988 - INFO - 开始加载基础模型...
+2025-03-27 00:06:48,689 - INFO - 基础模型加载完成，显存占用: 26.48 GB
+2025-03-27 00:06:48,690 - INFO - 开始加载 tokenizer...
+2025-03-27 00:06:49,115 - INFO - Tokenizer 配置: pad_token=<｜end▁of▁sentence｜>, pad_token_id=151643
+2025-03-27 00:06:49,116 - INFO - 开始加载基础模型...
+2025-03-27 00:10:30,078 - INFO - 基础模型加载完成，显存占用: 52.96 GB
+2025-03-27 00:10:30,079 - INFO - 开始加载微调模型...
+2025-03-27 00:10:31,683 - INFO - 微调模型加载完成，显存占用: 52.97 GB
+2025-03-27 00:10:31,683 - INFO - 开始预处理数据...
+2025-03-27 00:10:34,374 - INFO - 数据预处理完成
+2025-03-27 00:10:35,073 - WARNING - Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2025-03-27 00:10:35,538 - INFO - gcc -pthread -B /root/miniconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /root/miniconda3/include -fPIC -O2 -isystem /root/miniconda3/include -fPIC -c /tmp/tmp_oqw74o9/test.c -o /tmp/tmp_oqw74o9/test.o
+2025-03-27 00:10:35,750 - INFO - gcc -pthread -B /root/miniconda3/compiler_compat /tmp/tmp_oqw74o9/test.o -laio -o /tmp/tmp_oqw74o9/a.out
+2025-03-27 00:10:37,087 - WARNING - Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2025-03-27 00:10:37,096 - INFO - 开始评估基础模型...
+2025-03-27 00:17:01,248 - INFO - base 评估结果: {'eval_loss': 1.9758206605911255, 'eval_model_preparation_time': 0.0042, 'eval_accuracy': 0.4841168996188056, 'eval_f1': 0.4869873087145319, 'eval_precision': 0.5732223214198499, 'eval_recall': 0.4841168996188056, 'eval_runtime': 384.1455, 'eval_samples_per_second': 16.39, 'eval_steps_per_second': 4.097}
+2025-03-27 00:23:28,370 - INFO - 开始评估微调模型...
+2025-03-27 00:30:16,795 - INFO - finetuned 评估结果: {'eval_loss': 0.9572878479957581, 'eval_model_preparation_time': 0.0144, 'eval_accuracy': 0.6751905972045743, 'eval_f1': 0.6827279289890981, 'eval_precision': 0.7245213020477239, 'eval_recall': 0.6751905972045743, 'eval_runtime': 408.3774, 'eval_samples_per_second': 15.417, 'eval_steps_per_second': 3.854}
+2025-03-27 00:37:04,418 - INFO - 性能对比：
+2025-03-27 00:37:04,419 - INFO - 基础模型: {'eval_loss': 1.9758206605911255, 'eval_model_preparation_time': 0.0042, 'eval_accuracy': 0.4841168996188056, 'eval_f1': 0.4869873087145319, 'eval_precision': 0.5732223214198499, 'eval_recall': 0.4841168996188056, 'eval_runtime': 384.1455, 'eval_samples_per_second': 16.39, 'eval_steps_per_second': 4.097}
+2025-03-27 00:37:04,419 - INFO - 微调模型: {'eval_loss': 0.9572878479957581, 'eval_model_preparation_time': 0.0144, 'eval_accuracy': 0.6751905972045743, 'eval_f1': 0.6827279289890981, 'eval_precision': 0.7245213020477239, 'eval_recall': 0.6751905972045743, 'eval_runtime': 408.3774, 'eval_samples_per_second': 15.417, 'eval_steps_per_second': 3.854}
+2025-03-27 00:37:04,419 - INFO - eval_loss 减少百分比: 51.55%
+2025-03-27 00:37:04,419 - INFO - 可视化结果已保存至 /gemini/code/base_cm.png 等文件
+2025-03-27 00:37:04,451 - INFO - 评估完成，GPU 内存已清理

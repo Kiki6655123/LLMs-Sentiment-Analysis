@@ -1,0 +1,37 @@
+2025-03-27 01:10:04,209 - INFO - 开始评估 xlm-roberta-base 和 finetuned_xlm_roberta 对比
+2025-03-27 01:10:04,838 - INFO - 使用设备: cuda
+2025-03-27 01:10:04,855 - INFO - GPU 名称: P1.gpu.large, 显存: 78.95 GB
+2025-03-27 01:10:04,943 - INFO - /gemini/code/eval_unseen_comments_2000_v4.csv label 分布（过滤后）: {1: 1000, 0: 1000}
+2025-03-27 01:10:04,978 - INFO - /gemini/code/enhanced_tweets.csv label 分布（过滤后）: {1: 3099, 0: 1197}
+2025-03-27 01:10:04,979 - INFO - 加载了 2 个文件，共 6296 条数据（已过滤 label=2）
+2025-03-27 01:10:04,996 - INFO - 使用列名: cleaned_review
+2025-03-27 01:10:05,551 - INFO - 成功加载并验证未见数据
+2025-03-27 01:10:05,552 - INFO - 开始加载 tokenizer...
+2025-03-27 01:10:07,263 - INFO - Tokenizer 配置: pad_token=<pad>, pad_token_id=1
+2025-03-27 01:10:07,263 - INFO - 开始加载基础模型...
+2025-03-27 01:10:07,577 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-03-27 01:10:15,500 - INFO - 基础模型加载完成，显存占用: 1.04 GB
+2025-03-27 01:10:15,500 - INFO - 开始加载 tokenizer...
+2025-03-27 01:10:16,215 - INFO - Tokenizer 配置: pad_token=<pad>, pad_token_id=1
+2025-03-27 01:10:16,215 - INFO - 开始加载基础模型...
+2025-03-27 01:10:16,244 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-03-27 01:10:20,226 - INFO - 基础模型加载完成，显存占用: 2.07 GB
+2025-03-27 01:10:20,227 - INFO - 开始加载微调模型...
+2025-03-27 01:10:20,349 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-03-27 01:10:23,316 - INFO - 微调模型加载完成，显存占用: 3.11 GB
+2025-03-27 01:10:23,318 - INFO - 开始预处理数据...
+2025-03-27 01:10:26,000 - INFO - 数据预处理完成
+2025-03-27 01:10:26,317 - WARNING - Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2025-03-27 01:10:28,108 - INFO - gcc -pthread -B /root/miniconda3/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /root/miniconda3/include -fPIC -O2 -isystem /root/miniconda3/include -fPIC -c /tmp/tmp44jeutre/test.c -o /tmp/tmp44jeutre/test.o
+2025-03-27 01:10:28,307 - INFO - gcc -pthread -B /root/miniconda3/compiler_compat /tmp/tmp44jeutre/test.o -laio -o /tmp/tmp44jeutre/a.out
+2025-03-27 01:10:29,630 - WARNING - Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2025-03-27 01:10:29,643 - INFO - 开始评估基础模型...
+2025-03-27 01:10:58,988 - INFO - base 评估结果: {'eval_loss': 0.7110527157783508, 'eval_model_preparation_time': 0.005, 'eval_accuracy': 0.34926937738246505, 'eval_f1': 0.18287306537224293, 'eval_precision': 0.49373297300143104, 'eval_recall': 0.34926937738246505, 'eval_runtime': 29.3374, 'eval_samples_per_second': 214.606, 'eval_steps_per_second': 53.652}
+2025-03-27 01:11:29,755 - INFO - 开始评估微调模型...
+2025-03-27 01:11:58,805 - INFO - finetuned 评估结果: {'eval_loss': 2.204540252685547, 'eval_model_preparation_time': 0.0072, 'eval_accuracy': 0.7171219822109276, 'eval_f1': 0.7218738371029849, 'eval_precision': 0.8040383517415095, 'eval_recall': 0.7171219822109276, 'eval_runtime': 29.0033, 'eval_samples_per_second': 217.079, 'eval_steps_per_second': 54.27}
+2025-03-27 01:12:28,151 - INFO - 性能对比：
+2025-03-27 01:12:28,151 - INFO - 基础模型: {'eval_loss': 0.7110527157783508, 'eval_model_preparation_time': 0.005, 'eval_accuracy': 0.34926937738246505, 'eval_f1': 0.18287306537224293, 'eval_precision': 0.49373297300143104, 'eval_recall': 0.34926937738246505, 'eval_runtime': 29.3374, 'eval_samples_per_second': 214.606, 'eval_steps_per_second': 53.652}
+2025-03-27 01:12:28,151 - INFO - 微调模型: {'eval_loss': 2.204540252685547, 'eval_model_preparation_time': 0.0072, 'eval_accuracy': 0.7171219822109276, 'eval_f1': 0.7218738371029849, 'eval_precision': 0.8040383517415095, 'eval_recall': 0.7171219822109276, 'eval_runtime': 29.0033, 'eval_samples_per_second': 217.079, 'eval_steps_per_second': 54.27}
+2025-03-27 01:12:28,151 - INFO - eval_loss 减少百分比: -210.04%
+2025-03-27 01:12:28,152 - INFO - 可视化结果已保存至 /gemini/code/base_cm.png 等文件
+2025-03-27 01:12:28,152 - INFO - 评估完成，GPU 内存已清理
