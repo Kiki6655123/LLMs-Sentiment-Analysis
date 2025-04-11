@@ -11,4 +11,5 @@ The pre-trained models used in this project can be downloaded from the following
 - **sentence_transformer_finetuned**: [Download from VirtaiCloud](https://platform.virtaicloud.com/gemini_web/workspace/space/bmimkmy0akcl/model/detail/565550662663294976)
 - **paraphrase-mutilingual-mpnet-base**: [Download from VirtaiCloud](https://platform.virtaicloud.com/gemini_web/workspace/space/bmimkmy0akcl/model/detail/565585617221079040)
 - **xlm-roberta-base**: [Download from VirtaiCloud](https://platform.virtaicloud.com/gemini_web/workspace/space/bmimkmy0akcl/model/detail/565586115726577664)
+ - **Deepseek-R1-Distill-Qwen-7B**: [Download from VirtaiCloud](https://platform.virtaicloud.com/gemini_web/workspace/space/bmimkmy0akcl/model/detail/565585843092738048)
 - **mt5-finetued_m2m100**: [Download from VirtaiCloud](https://platform.virtaicloud.com/gemini_web/workspace/space/bmimkmy0akcl/model/detail/565580912306589696)
