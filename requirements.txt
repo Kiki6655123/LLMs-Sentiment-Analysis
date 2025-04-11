@@ -1,0 +1,23 @@
+# Core dependencies for Python environment
+python==3.11
+
+# Deep learning framework
+torch==2.0.1
+
+# Model libraries
+transformers==4.30.0
+sentence-transformers==2.2.2
+
+# Machine learning library for Stacking
+xgboost==1.7.5
+
+# Evaluation metric for translation
+sacrebleu==2.3.1
+
+# Data processing and numerical computation
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+
+# Additional utilities
+matplotlib>=3.7.0  # For plotting (e.g., loss curves)
